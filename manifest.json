@@ -1,0 +1,32 @@
+{
+  "background_color": "#378ab9",
+  "description": "Estou instalando a versão app do site!",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "reading-up.netlify",
+  "orientation": "landscape",
+  "scope": "/",
+  "short_name": "Reading-Up",
+  "start_url": "/",
+  "theme_color": "#fe0404",
+  "categories": [
+    "books",
+    "education"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "nitlab.jpg",
+      "type": "image/jpeg",
+      "sizes": "272x291"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "RUP",
+      "url": "",
+      "description": ""
+    }
+  ],
+  "lang": "pt"
+}
