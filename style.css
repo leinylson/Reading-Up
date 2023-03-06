@@ -10,9 +10,12 @@ body{
 }
 
 .container{
-    width: 1000px;
+    width: 1300px;
     position: relative;
-    display: flex-wrap;
+    /* Vertical */
+    /* display: flex-wrap; */
+    /* Horizontal */
+    display: flex; 
     justify-content: space-between;
 }
 
@@ -22,8 +25,8 @@ body{
 }
 
 .container .card .face{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 280px;
     transition: 0.5s;
 }
 
@@ -38,7 +41,9 @@ body{
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    /* background: #ff0057; */
+    /* background: #07c4f8; */
+    background: #91070a;
     transform: translateY(0);
 }
 
@@ -52,15 +57,15 @@ body{
 }
 
 .container .card .face.face1 .content img{
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
+    margin: 15px 0 0;
+    padding: 5px;
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.6em;
 }
 
 .container .card .face.face2{
@@ -69,13 +74,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
 }
 
 .container .card:hover .face.face2{
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(1, 127, 254, 0.8);
     transform: translateY(0);
 }
 
@@ -85,10 +92,11 @@ body{
 }
 
 .container .card .face.face2 .content a{
-    margin: 15px 0 0;
+    margin: 5px 0 0;
     display:  inline-block;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 50;
+    font-size: 1.5em;
     color: #333;
     padding: 5px;
     border: 1px solid #333;
@@ -97,8 +105,4 @@ body{
 .container .card .face.face2 .content a:hover{
     background: #333;
     color: #fff;
-}
-
-img{
-    text-align: center;
 }
