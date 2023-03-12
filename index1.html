@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário de Alunos</title>
+  </head>
+  <body>
+    <h1>Formulário de Alunos</h1>
+    
+    <h2>Adicionar Aluno</h2>
+    <form action="adicionar_aluno.php" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+      <br>
+      <label for="professor">Professor:</label>
+      <input type="text" name="professor" required>
+      <br>
+      <input type="submit" value="Adicionar Aluno">
+    </form>
+    
+    <h2>Editar ou Excluir Aluno</h2>
+    <form action="editar_excluir_aluno.php" method="post">
+      <label for="aluno">Selecionar Aluno:</label>
+      <select name="aluno" required>
+        <option value="" disabled selected>Selecione um aluno</option>
+        <option value="1">Aluno 1</option>
+        <option value="2">Aluno 2</option>
+        <option value="3">Aluno 3</option>
+        <!-- adicione mais opções de alunos conforme necessário -->
+      </select>
+      <br>
+      <input type="radio" id="editar" name="acao" value="editar" required>
+      <label for="editar">Editar Aluno</label>
+      <br>
+      <input type="radio" id="excluir" name="acao" value="excluir" required>
+      <label for="excluir">Excluir Aluno</label>
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+    
+  </body>
+</html>
